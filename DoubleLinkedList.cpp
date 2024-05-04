@@ -48,5 +48,7 @@ void addNode()
             previous = current;  //step 1.d : move the previous to the current node
             current = current->next;  //step 1.e : move the current to the next node
         }
+        newNode->next = current;  //step 4 : make the next field of the new node point to current
+        newNode->prev = previous;  //step 5 : make the previous field of the new node point to previous
     }
 }
