@@ -183,12 +183,29 @@ void searchData()
     cout << "\nEnter the roll number of the student whose record you want to search : ";
     int num;
     cin >> num;
-    if (seacrh(num, &prev, &curr) == false)
+    if (search(num, &prev, &curr) == false)
         cout << "\nRecord not found" << endl;
     else
     {
         cout << "\nRecord found" << endl;
         cout << "\nRoll number : " << curr->noMhs << endl;
         cout << "\nName : " << curr->name << endl;
+    }
+}
+
+int main()
+{
+    while (true)
+    {
+        try
+        {
+            cout << "\nMenu" << endl;
+            cout 
+        }
+        catch(const std::exception& e)
+        {
+            
+        }
+        
     }
 }
